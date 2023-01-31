@@ -59,13 +59,22 @@ function getTimeZone(latitude, longitude) {
 
 searchButton.addEventListener("click", () => {
     let address = searchInput.value;
-    fetch(`https://api.geoapify.com/v1/geocode/search?text=${encodeURIComponent(address)}&apiKey=${apiKey}`)
-    .then((response) => response.json())
-    .then((data) => {
-        console.log(data);
-        updateOutputUi(data);
-    })
-    .catch((error) => console.log(error));
+    if(address == "")
+    {
+        console.log("hi")
+        output_box.innerHTML = `Please enter an address`
+        output_box.style.color='red'
+    }
+    else{
+        fetch(`https://api.geoapify.com/v1/geocode/search?text=${encodeURIComponent(address)}&apiKey=${apiKey}`)
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data);
+            updateOutputUi(data);
+        })
+        .catch((error) => console.log(error));
+    }
+    
 })
 
 function updateOutputUi(data){
