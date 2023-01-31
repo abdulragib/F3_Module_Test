@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container-Weather">
+    <h1 id="data-container-title">TimeZone Api</h1>
+    <h2 id="data-container-subtitle">Your Current TimeZone</h2>
+  <div id="data-container">
+     <div id="data">
+       <div id="location">Name of TimeZone: </div>
+         <div id="lat-log-flex">
+             <div id="data-lat">Lat:</div>
+             <div id="data-long">Long:</div>
+         </div>
+         <div id="timezone">OffSet STD:</div>
+         <div id="wind-speed">OffSet STD Seconds:</div>
+         <div id="pressure">OffSet DST:</div>
+         <div id="humidity">OffSet DST Seconds:</div>
+         <div id="wind-direction">Country:</div>
+         <div id="uv-index">Postcode:</div>
+         <div id="feels-like">city:</div>
+     </div>
+ </div>
+
+</div>
+
+
+<div id="search-container">
+    <h2>Enter Address</h2>
+    <input type="text" id="search-input" placeholder="Address">
+    <button id="search-button">Search</button>  
+
+    <div id="output-Box">
+   
+    </div>
+</div>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

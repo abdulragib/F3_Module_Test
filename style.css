@@ -1,0 +1,130 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Inter', serif;
+}
+
+.container{
+  display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height:100vh;
+    background-color:black;
+    color:white;
+}
+
+.container-Weather{
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height:90vh;
+}
+
+.btn{
+    width:18%;
+    height:6%;
+    margin-top:40px;
+}
+
+.btn,a{
+    text-decoration:none;
+    color:black;
+}
+
+h1{
+    font-size: 70px;
+    font-family: 'Inter', serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/*weather data*/
+#lat{
+    display: inline;
+}
+
+#lat-log-container{
+    display:flex;
+    width:37%;
+    justify-content: space-evenly;
+    margin-bottom:30px;
+    padding-top:10px;
+    line-height:40px;
+}
+
+#lat{
+    padding-right:50%;
+}
+
+#lat-log-flex{
+    display:flex;
+}
+
+#data-container-title{
+ padding-left:10px;
+ margin-bottom:20px;
+ margin-top:10px;
+}
+
+#data-container-subtitle{
+ padding-left:20px;
+ margin-bottom:10px;
+}
+#data-lat{
+    padding-right:40%;
+}
+
+#data-container{
+    width: 100%;
+    height:90vh;
+    background-color:white;
+    color:black;
+}
+
+#data-output-container{
+    width: 95vw;
+    height:65vh;
+    background-color:black;
+    color:white;
+    margin-top:10px;
+    border:1px solid white;
+}
+
+#data{
+    border:1px solid black;
+    margin:20px;
+    padding:10px;
+    line-height:35px;
+}
+
+#search-container{
+    background-color: black !important;
+    color: white !important;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding:20px 30px;
+}
+
+#search-input{
+   margin-top:20px;
+   padding: 8px 0px;
+   width:50%;
+   background-color: black;
+   border:1px solid white;
+   padding-left:5px;
+   color:white;
+}
+
+button{
+    margin-top:20px;
+    margin-bottom:30px;
+    padding: 6px 40px;
+}
