@@ -80,6 +80,7 @@ searchButton.addEventListener("click", () => {
 function updateOutputUi(data){
     
     output_box.innerHTML = `
+    <h2>Your Result</h2>
     <div id="data-output-container">
     <div id="data">
       <div id="location">Name of TimeZone: ${data.features[0].properties.timezone.name}</div>
